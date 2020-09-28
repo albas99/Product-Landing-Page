@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-bg-color: #0B0500;
+    --main-text-color: #FE5E41;
+    --branch-text-color: #FFE066;
+    --main-font-family: futura, serif, sans-serif;
+    --branch-font-family: gillsans, serif, sans-serif;
+}
+
+body{
+    background: var(--main-bg-color);
+}
+
+#header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+
+
+#nav-bar ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-link{
+    padding: 0 3rem;
+    text-decoration: none;
+    font-family: var(--main-font-family);
+    font-size: 1.6rem;
+    color: var(--main-text-color);
+}
+
+@media only screen and (max-width: 750px) {
+    #header{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+
+    #header-img{
+        margin-bottom: 1rem;
+    }
+
+    #nav-bar ul{
+        display: inline;
+        text-align: center;
+    }
+
+    .nav-link{
+        font-size: 1.2rem;
+    }
+}
+
+.form{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form h2{
+    font-family: var(--main-font-family);
+    font-size: 2rem;
+    color: var(--main-text-color);
+    margin-bottom: 1.4rem;
+}
+
+.form #form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#email{
+    height: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.cta{
+    width: 50%;
+    height: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    background: var(--branch-text-color);
+    font-family: var(--branch-font-family);
+    font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 750px) {
+    .form{
+        width: 80%;
+    }
+    .form h2{
+        font-size: 1.2rem;
+    }
+    .form #form{
+        width: 70%;
+    }
+    .cta{
+        width: 50%;
+    }
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.grid{
+    display: flex;
+    width: 50%;
+    margin: 2rem auto;
+}
+
+.icon{
+    font-size: 2rem;
+    width: 5rem;
+    color: var(--branch-text-color);
+}
+
+.description{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.description h2{
+    font-family: var(--main-font-family);
+    font-size: 1.8rem;
+    color: var(--main-text-color);
+    margin-bottom: .5rem;
+}
+
+.description p{
+    font-family: var(--branch-font-family);
+    font-size: 1.2rem;
+    color: var(--main-text-color);
+}
+
+.video{
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 750px) {
+    .container{
+        width: 90%;
+    }
+    .icon{
+        display: none;
+    }
+
+    .grid{
+        width: 90%;
+    }
+    .description{
+        width: 90%;
+    }
+    .video{
+        width: 100%;
+       
+    }
+    .video iframe{
+        width: 100%;
+    }
+    
+}
+
+#pricing{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 17rem;
+}
+
+.price{
+    border: 1px black solid;
+    width: 32%;
+    height: 25rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: rgb(199, 197, 197);
+}
+
+.type{
+    background: var(--main-text-color);
+    height: 20%;
+    padding: .3rem 0;
+    align-items: center;
+    text-align: center;
+}
+
+.type h2{
+    font-family: var(--main-font-family);
+    font-size: 1.8rem;
+}
+
+.details{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+.details h2{
+    font-family: var(--main-font-family);
+    font-size: 1.8rem;
+    color: var(--main-text-color);
+    margin-bottom: 1.3rem;
+}
+
+.details p{
+    font-family: var(--branch-font-family);
+    font-size: 1.5rem;
+    color: var(--branch-text-color);
+    margin-bottom: 2rem;
+}
+
+.select{
+    background: var(--branch-text-color);
+    width: 50%;
+    height: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--branch-font-family);
+}
+
+#footer{
+    width: 60%;
+    margin: 0 auto;
+    background: rgb(199, 197, 197);
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.footer-link{
+    padding: 0 2rem;
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-family: var(--main-font-family);
+    font-size: 1.3rem;
+}
+
+#footer p{
+    text-align: end;
+    margin-top: 1rem;
+    padding: 0 2rem;
+    font-family: var(--main-font-family);
+    font-size: 1.3rem;
+}
+
+@media only screen and ( max-width: 750px) {
+    #pricing{
+        display: inline;
+    }
+    .price{
+        width: 90%;
+        margin: 2 auto;
+    }
+    #footer{
+        width: 90%;
+    }
+}
